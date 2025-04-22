@@ -18,13 +18,16 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
   return (
     <aside className="sidebar">
       <Link href="/">
-        <Image
-          src="/assets/icons/logo-full-brand.svg"
-          alt="logo"
-          width={160}
-          height={50}
-          className="hidden h-auto lg:block"
-        />
+        <div className="items-center justify-center flex">
+                  <Image
+                    src="/assets/icons/logo-brand.svg"
+                    alt="logo"
+                    width={50}
+                    height={25}
+                    className="h-auto"
+                  />
+                  <h1 className="h1 m-3 text-black">DriveStore</h1>
+                  </div>
 
         <Image
           src="/assets/icons/logo-brand.svg"
