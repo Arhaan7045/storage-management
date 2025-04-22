@@ -37,13 +37,16 @@ const MobileNavigation = ({
 
   return (
     <header className="mobile-header">
-      <Image
-        src="/assets/icons/logo-full-brand.svg"
-        alt="logo"
-        width={120}
-        height={52}
-        className="h-auto"
-      />
+      <div className="items-center justify-center flex">
+                        <Image
+                          src="/assets/icons/logo-brand.svg"
+                          alt="logo"
+                          width={50}
+                          height={25}
+                          className="h-auto"
+                        />
+                        <h1 className="h1 m-3 text-black">DriveStore</h1>
+                        </div>
 
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
